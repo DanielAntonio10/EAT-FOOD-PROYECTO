@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="banner">
+    <div class="navbar">
+        <img src="img/logo.png" class="logo">
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/menu.html">Menú</a></li>
+        </ul>
+    </div>
+    <h1>ㅤㅤ</h1>
+<section class="todo">
+    <div class="desc"> <h2>¡MENU HOY!</h2></div>
+    <h1>ㅤㅤ</h1>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://wa.me/52901354651?text=Hola%20necesito%20informacion">
+      <img src="https://th.bing.com/th/id/OIP.OMNMv-rL14u2hw1kPiJQGwHaE7?pid=ImgDet&rs=1" alt="Cinque Terre" width="500" height="300">
+    </a>
+    <div class="tex"> <h2>¡POLLO BROASTER!
+        <BR> ¡A SOLO $7.50!
+    </h2>
+    <h5>ㅤㅤ</h5>
+    <h3>NOTA:Los precios pueden variar segun el dìa<br>consultar los precios
+    <br>MAS INFO CLICK EN LA IMAGEN</h3></div>
+  </div>
+</div>
+<h1>ㅤㅤ</h1>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://wa.me/52901354651?text=Hola%20necesito%20informacion">
+      <img src="https://th.bing.com/th/id/OIP.QY03uGJvMqNrPtyeNqCSHwHaE8?pid=ImgDet&rs=1" alt="Forest" width="500" height="300">
+    </a>
+    <div class="tex"> <h2>¡CEBICHE! <BR>
+        ¡A SOLO $8.50!</h2>
+        <h5>ㅤㅤ</h5>
+        <h3>NOTA:Los precios pueden variar segun el dìa<br>consultar los precios
+        <br>MAS INFO CLICK EN LA IMAGEN</h3></div>
+  </div>
+</div>
+<div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://wa.me/52901354651?text=Hola%20necesito%20informacion">
+        <img src="https://media.airedesantafe.com.ar/p/01ebb4d5a33d4c11eba48c68185dc2ef/adjuntos/268/imagenes/002/816/0002816910/como-preparar-salchipapa.png" alt="Forest" width="500" height="300">
+      </a>
+      <div class="tex"> <h2>¡SALCHIPAPA!
+        <br>¡A SOLO $7!
+        <h5>ㅤㅤ</h5>
+        <h3>NOTA:Los precios pueden variar segun el dìa<br>consultar los precios
+        <br>MAS INFO CLICK EN LA IMAGEN</h3>
+      </h2></div>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="https://wa.me/52901354651?text=Hola%20necesito%20informacion">
+        <img src="https://micevichedehoy.com/wp-content/uploads/2018/10/ceviche-combinado_700x466-698x465.jpg" alt="Forest" width="500" height="300">
+      </a>
+      <div class="tex"> <h2>¡COMBINADO!
+        <BR>¡A SOLO $7.50!</h2>
+            <h5>ㅤㅤ</h5>
+            <h3>NOTA:Los precios pueden variar segun el dìa<br>consultar los precios
+            <br>MAS INFO CLICK EN LA IMAGEN</h3></div>
+    </div>
+  </div>
+
+</section>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .banner{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(3, 3, 3, 0.75)),url(https://i.pinimg.com/736x/c7/57/94/c757943ed2fa019ea8f4dd0b279f396b.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .navbar{
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+            width: 180px;
+            cursor: pointer;
+            border-radius: 0.5rem;
+        }
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+
+        .navbar ul li a{
+            text-decoration: none;
+            color: azure;
+            text-transform: uppercase;
+        }
+
+        .navbar ul li::after{
+            content: '';
+            height: 3px;
+            width: 0;
+            background: #e9cb21;
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            transition: 0.5s;
+        }
+        .navbar ul li:hover::after{
+            width: 100%;
+        }
+        .content{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            color: azure;
+        }
+        .content h1{
+            font-size: 70px;
+            margin-top: 80px;
+        }
+        .content p{
+            margin: 20px auto;
+            font-weight: 100;
+            line-height: 25px;
+        }
+        .desc{
+            margin-left: 1rem;
+            background-color: #e9cb21;
+            border-radius: 1rem;
+            width: 190px;
+            color: rgb(7, 0, 0);
+        }
+        .todo{
+            margin-left: 1rem;
+        }
+
+        div.gallery {
+            border: 1px solid #ccc;
+          }
+          
+          div.gallery:hover {
+            border: 1px solid #777;
+          }
+          
+          div.gallery img {
+            width: 100%;
+            height: auto;
+          }
+          
+          div.desc {
+            padding: 15px;
+            text-align: center;
+          }
+          
+          * {
+            box-sizing: border-box;
+          }
+          
+          .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+          }
+          
+          @media only screen and (max-width: 700px) {
+            .responsive {
+              width: 49.99999%;
+              margin: 6px 0;
+            }
+          }
+          
+          @media only screen and (max-width: 500px) {
+            .responsive {
+              width: 100%;
+            }
+          }
+          
+          .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          
+          .tex{
+            color: white;
+          }
+
+    </style>
+    
+</body>
+</html>
